@@ -2,10 +2,10 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>Portfolio</title>
+<title>샘플</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<link rel="stylesheet" href="/public/style.css">
+<link rel="stylesheet" href="public/style.css">
 
 <style>
 .sr-only {
@@ -31,98 +31,54 @@ $(function(){
 });
 </script>
 </head>
-<body>
+<body class="nohero">
 
 <header class="head-color">
-<div class="container">
-	<div class="container-small">
-		<a href="/index" class="headA">Portfolio</a>
-
-		<button type="button" class="headC">
-			<span class="fa fa-bars" title="MENU"></span>
-		</button>
+	<div class="container">
+		<div class="container-small">
+			<a href="/index" class="headA">Portfolio</a>
+	
+			<button type="button" class="headC">
+				<span class="fa fa-bars" title="MENU"></span>
+			</button>
+		</div>
+	
+		<nav class="headB">
+			<ul>
+				<li><a href="/index">TOP</a></li>
+				<li><a href="/content">콘텐츠</a></li>
+				<li><a href="/about">ABOUT</a></li>
+				<li><a href="/contact">문의</a></li>
+			</ul>
+		</nav>
 	</div>
-
-	<nav class="headB">
-		<ul>
-			<li><a href="/index">TOP</a></li>
-			<li><a href="/content">콘텐츠</a></li>
-			<li><a href="/about">ABOUT</a></li>
-			<li><a href="/contact">문의</a></li>
-		</ul>
-	</nav>
-</div>
 </header>
 
-<section class="conA">
+
+<article class="post">
 <div class="container">
-	<img src="img/logo.svg" alt="">
-	<h1>PORTFOLIO</h1>
-	<p>By JaeChan</p>
-	<a href="#">Start online code-editor</a>
+
+	<h1>문의</h1>
+
+	<p>아래의 연락처로 문의해주세요.</p>
+
+	<div class="contact-wrap">
+		<div class="contact">
+			<span class="fa fa-phone"></span>
+			<h2>전화</h2>
+			<a href="tel:01022409517">010-2240-9517</a>
+		</div>
+
+		<div class="contact">
+			<span class="fa fa-envelope"></span>
+			<h2>이메일</h2>
+			<a href="mailto:rjch221@gmail.com">rjch221@gmail.com</a>
+		</div>
+	</div>
+
 </div>
-</section>
+</article>
 
-
-<section class="conB">
-<div class="container">
-	<div class="text">
-		<span class="fa fa-list-alt icon"></span>
-		<h2>PROJECTs</h2>
-		<p>개발 프로젝트 목록</p>
-		<a href="#">MORE... 
-		<span class="fa fa-chevron-right"></span>
-		</a>
-	</div>
-
-	<div class="text">
-		<span class="fa fa-globe icon"></span>
-		<h2>Web Service</h2>
-		<p>온라인 코드에디터와 웹 채팅을 만나보세요!</p>
-		<a href="#">MORE... 
-		<span class="fa fa-chevron-right"></span>
-		</a>
-	</div>
-
-	<div class="text">
-		<span class="fa fa-edit icon"></span>
-		<h2>블로그 포스팅</h2>
-		<p>개발 기록 및 스터디 노트.</p>
-		<a href="#">MORE... 
-		<span class="fa fa-chevron-right"></span>
-		</a>
-	</div>
-</div>
-</section>
-
-
-
-<section class="conC">
-<div class="container">
-	<div class="photo"></div>
-	<div class="text">
-		<h2>인공지능 스마트 스피커 RaMi</h2>
-		<p>음성 명령을 통해 여러가지 서비스를 이용해 보세요.</p>
-		<a href="#">자세한 설정 방법 살펴보기
-		<span class="fa fa-chevron-right"></span>
-		</a>
-	</div>
-</div>
-</section>
-
-
-<section class="conD">
-<div class="container">
-	<div class="photo"></div>
-	<div class="text">
-		<h2>Code Editor</h2>
-		<p>온라인에서 직접 코드를 작성하고 디버깅을 할 수 있습니다.</p>
-		<a href="#">라이프로그 살펴보기
-		<span class="fa fa-chevron-right"></span>
-		</a>
-	</div>
-</div>
-</section>
 
 
 <footer>

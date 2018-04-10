@@ -2,10 +2,10 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>Portfolio</title>
+<title>샘플</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<link rel="stylesheet" href="/public/style.css">
+<link rel="stylesheet" href="public/style.css">
 
 <style>
 .sr-only {
@@ -54,73 +54,96 @@ $(function(){
 </div>
 </header>
 
-<section class="conA">
+<section class="conA compact">
 <div class="container">
-	<img src="img/logo.svg" alt="">
-	<h1>PORTFOLIO</h1>
-	<p>By JaeChan</p>
-	<a href="#">Start online code-editor</a>
-</div>
-</section>
-
-
-<section class="conB">
-<div class="container">
-	<div class="text">
-		<span class="fa fa-list-alt icon"></span>
-		<h2>PROJECTs</h2>
+		<h1>PROJECTs</h1>
 		<p>개발 프로젝트 목록</p>
-		<a href="#">MORE... 
-		<span class="fa fa-chevron-right"></span>
-		</a>
-	</div>
-
-	<div class="text">
-		<span class="fa fa-globe icon"></span>
-		<h2>Web Service</h2>
-		<p>온라인 코드에디터와 웹 채팅을 만나보세요!</p>
-		<a href="#">MORE... 
-		<span class="fa fa-chevron-right"></span>
-		</a>
-	</div>
-
-	<div class="text">
-		<span class="fa fa-edit icon"></span>
-		<h2>블로그 포스팅</h2>
-		<p>개발 기록 및 스터디 노트.</p>
-		<a href="#">MORE... 
-		<span class="fa fa-chevron-right"></span>
-		</a>
-	</div>
 </div>
 </section>
 
 
-
-<section class="conC">
+<section class="listA">
+<h1 class="sr-only">RECENT POSTS</h1>
 <div class="container">
-	<div class="photo"></div>
-	<div class="text">
-		<h2>인공지능 스마트 스피커 RaMi</h2>
-		<p>음성 명령을 통해 여러가지 서비스를 이용해 보세요.</p>
-		<a href="#">자세한 설정 방법 살펴보기
-		<span class="fa fa-chevron-right"></span>
-		</a>
-	</div>
-</div>
-</section>
+	<article>
+	<a href="#">
+		<div class="photo" style="background-image: url(public/img/sp.jpg);"></div>
+		<div class="text">
+			<h2>스마트 스피커 RaMi</h2>
+			<p>인공지능 스마트 스피커 RaMi를 통해 일상생활에서 간편한 서비스를 이용해보세요.</p>
+		</div>
+	</a>
+	</article>
 
+	<article>
+	<a href="#">
+		<div class="photo" style="background-image: url(public/img/ce.jpg);"></div>
+		<div class="text">
+			<h2>Web Code-editor</h2>
+			<p>온라인에서 코드 작성 및 디버깅을 할 수 있어요.</p>
+		</div>
+	</a>
+	</article>
 
-<section class="conD">
-<div class="container">
-	<div class="photo"></div>
-	<div class="text">
-		<h2>Code Editor</h2>
-		<p>온라인에서 직접 코드를 작성하고 디버깅을 할 수 있습니다.</p>
-		<a href="#">라이프로그 살펴보기
-		<span class="fa fa-chevron-right"></span>
+	<article>
+	<a href="#">
+		<div class="photo" style="background-image: url(public/img/cico.jpg);"></div>
+		<div class="text">
+			<h2>CICO</h2>
+			<p>SKT IoT 통신망인 LoRa를 통해 디바이스를 제어하는 자전거 대여 시스템입니다.</p>
+		</div>
+	</a>
+	</article>
+
+	<article>
+	<a href="#">
+		<div class="photo" style="background-image: url(public/img/gaia.jpg);"></div>
+		<div class="text">
+			<h2>Gaia Simulator</h2>
+			<p>논리회로를 시뮬레이션 할 수 있는 가상 시뮬레이터입니다. MFC로 작성된 응용 프로그램입니다.</p>
+		</div>
+	</a>
+	</article>
+
+	<article>
+	<a href="#">
+		<div class="photo" style="background-image: url(public/img/tfmt.jpg);"></div>
+		<div class="text">
+			<h2>TFMT</h2>
+			<p>철도선로변환 시험기 프로젝트입니다.</p>
+		</div>
+	</a>
+	</article>
+
+	<article>
+	<a href="#">
+		<div class="photo" style="background-image: url(public/img/chat.jpg);"></div>
+		<div class="text">
+			<h2>Web Chat Game</h2>
+			<p>친구들과 함께 즐길 수 있는 간단한 웹 게임입니다. 제시어에 대해 설명하고 다른 제시어를 받은 범인을 찾아보세요!</p>
+		</div>
+	</a>
+	</article>
+
+	<article>
+		<a href="#">
+			<div class="photo" style="background-image: url(public/img/chat.jpg);"></div>
+			<div class="text">
+				<h2>Web Chat Game</h2>
+				<p>친구들과 함께 즐길 수 있는 간단한 웹 게임입니다. 제시어에 대해 설명하고 다른 제시어를 받은 범인을 찾아보세요!</p>
+			</div>
 		</a>
-	</div>
+	</article>
+	<article>
+		<a href="#">
+			<div class="photo" style="background-image: url(public/img/chat.jpg);"></div>
+			<div class="text">
+				<h2>Web Chat Game</h2>
+				<p>친구들과 함께 즐길 수 있는 간단한 웹 게임입니다. 제시어에 대해 설명하고 다른 제시어를 받은 범인을 찾아보세요!</p>
+			</div>
+		</a>
+	</article>
+	
 </div>
 </section>
 
