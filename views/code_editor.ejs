@@ -3,47 +3,34 @@
 
 <% include ./head %>
 
-    <body>
 
-        <header class="head-color">
-            <div class="container">
-                <div class="container-small">
-                    <a href="/index" class="headA">Portfolio</a>
+        
+<body>
+    
+    <div class = "cd_container">
+        <div class="head-area">
+            
+        </div>
+        <div class = "code-area" id="ca">
+                
+        </div>
+        <div class="result-area" id="ra">
+            Hello
+        </div>
 
-                    <button type="button" class="headC">
-                        <span class="fa fa-bars" title="MENU"></span>
-                    </button>
-                </div>
+    </div>   
+</body>
 
-                <nav class="headB">
-                    <ul>
-                        <li>
-                            <a href="/index">TOP</a>
-                        </li>
-                        <li>
-                            <a href="/list">콘텐츠</a>
-                        </li>
-                        <!--<li><a href="/about">ABOUT</a></li> -->
-                        <li>
-                            <a href="/contact">문의</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="">
-                <a href="/index" class="headA">Portfolio</a>
+<script>
 
-
-            </div>
-        </header>
-        <section>
-            <textarea rows="500" cols="2000" name="contents">
-
-            </textarea>
-        </section>
-
-
-
-    </body>
+        $(document).keyup(function(event){
+            //alert(event.which);
+            $("#ca").append(String.fromCharCode(event.which))
+        });
+        $("#ca").click(function(){
+            alert('click called');
+        });
+    
+</script>
 
 </html>
