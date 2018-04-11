@@ -1,58 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-<meta charset="UTF-8">
-<title>샘플</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<link rel="stylesheet" href="public/style.css">
 
-<style>
-.sr-only {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
-	border: 0;
-}
-</style>
+<% include ./head %>
 
-<script src="https://use.fontawesome.com/926fe18a63.js"></script>
-
-<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-<script>
-$(function(){
-	$(".headC").click(function(){
-		$(".headB").slideToggle();
-	});
-});
-</script>
-</head>
 <body>
 
-<header class="head-color">
-<div class="container">
-	<div class="container-small">
-		<a href="/index" class="headA">Portfolio</a>
-
-		<button type="button" class="headC">
-			<span class="fa fa-bars" title="MENU"></span>
-		</button>
-	</div>
-
-	<nav class="headB">
-		<ul>
-			<li><a href="/index">TOP</a></li>
-			<li><a href="/content">콘텐츠</a></li>
-			<li><a href="/about">ABOUT</a></li>
-			<li><a href="/contact">문의</a></li>
-		</ul>
-	</nav>
-</div>
-</header>
+<% include ./header %>
 
 <section class="conA compact">
 <div class="container">
@@ -65,168 +18,12 @@ $(function(){
 <section class="listA">
 <h1 class="sr-only">RECENT POSTS</h1>
 <div class="container">
-	<article>
-	<a href="#">
-		<div class="photo" style="background-image: url(public/img/sp.jpg);"></div>
-		<div class="text">
-			<h2>스마트 스피커 RaMi</h2>
-			<p>인공지능 스마트 스피커 RaMi를 통해 일상생활에서 간편한 서비스를 이용해보세요.</p>
-		</div>
-	</a>
-	</article>
-
-	<article>
-	<a href="#">
-		<div class="photo" style="background-image: url(public/img/ce.jpg);"></div>
-		<div class="text">
-			<h2>Web Code-editor</h2>
-			<p>온라인에서 코드 작성 및 디버깅을 할 수 있어요.</p>
-		</div>
-	</a>
-	</article>
-
-	<article>
-	<a href="#">
-		<div class="photo" style="background-image: url(public/img/cico.jpg);"></div>
-		<div class="text">
-			<h2>CICO</h2>
-			<p>SKT IoT 통신망인 LoRa를 통해 디바이스를 제어하는 자전거 대여 시스템입니다.</p>
-		</div>
-	</a>
-	</article>
-
-	<article>
-	<a href="#">
-		<div class="photo" style="background-image: url(public/img/gaia.jpg);"></div>
-		<div class="text">
-			<h2>Gaia Simulator</h2>
-			<p>논리회로를 시뮬레이션 할 수 있는 가상 시뮬레이터입니다. MFC로 작성된 응용 프로그램입니다.</p>
-		</div>
-	</a>
-	</article>
-
-	<article>
-	<a href="#">
-		<div class="photo" style="background-image: url(public/img/tfmt.jpg);"></div>
-		<div class="text">
-			<h2>TFMT</h2>
-			<p>철도선로변환 시험기 프로젝트입니다.</p>
-		</div>
-	</a>
-	</article>
-
-	<article>
-	<a href="#">
-		<div class="photo" style="background-image: url(public/img/chat.jpg);"></div>
-		<div class="text">
-			<h2>Web Chat Game</h2>
-			<p>친구들과 함께 즐길 수 있는 간단한 웹 게임입니다. 제시어에 대해 설명하고 다른 제시어를 받은 범인을 찾아보세요!</p>
-		</div>
-	</a>
-	</article>
-
-	<article>
-		<a href="#">
-			<div class="photo" style="background-image: url(public/img/chat.jpg);"></div>
-			<div class="text">
-				<h2>Web Chat Game</h2>
-				<p>친구들과 함께 즐길 수 있는 간단한 웹 게임입니다. 제시어에 대해 설명하고 다른 제시어를 받은 범인을 찾아보세요!</p>
-			</div>
-		</a>
-	</article>
-	<article>
-		<a href="#">
-			<div class="photo" style="background-image: url(public/img/chat.jpg);"></div>
-			<div class="text">
-				<h2>Web Chat Game</h2>
-				<p>친구들과 함께 즐길 수 있는 간단한 웹 게임입니다. 제시어에 대해 설명하고 다른 제시어를 받은 범인을 찾아보세요!</p>
-			</div>
-		</a>
-	</article>
-	
+	<%- list %>
 </div>
 </section>
 
 
-<footer>
-<div class="container">
-
-	<div class="footA">
-		<h2>LOGGER</h2>
-		<p>
-		주소: IT 전문서시 위키구 북스동<br>
-		<a href="http://logger.nett/">http://logger.nett/</a>
-		</p>
-
-		<nav class="footD">
-			<ul>
-				<li><a href="#">
-					<span class="fa fa-twitter"
-					 title="Twitter"></span>
-				</a></li>
-
-				<li><a href="#">
-					<span class="fa fa-facebook"
-					 title="Facebook"></span>
-				</a></li>
-
-				<li><a href="#">
-					<span class="fa fa-google-plus"
-					 title="Google Plus"></span>
-				</a></li>
-
-				<li><a href="#">
-					<span class="fa fa-instagram"
-					 title="Instagram"></span>
-				</a></li>
-
-				<li><a href="#">
-					<span class="fa fa-youtube"
-					 title="YouTube"></span>
-				</a></li>
-			</ul>
-		</nav>
-	</div>
-
-	<nav class="footB">
-		<div>
-			<h3>ABOUT</h3>
-			<ul>
-				<li><a href="#">설립</a></li>
-				<li><a href="#">주소</a></li>
-				<li><a href="#">지도</a></li>
-				<li><a href="#">스태프</a></li>
-			</ul>
-		</div>
-
-		<div>
-			<h3>SUPPORT</h3>
-			<ul>
-				<li><a href="#">다운로드</a></li>
-				<li><a href="#">매뉴얼</a></li>
-				<li><a href="#">자주 묻는 질문</a></li>
-				<li><a href="#">문의</a></li>
-			</ul>
-		</div>
-
-		<div>
-			<h3>CONTENTS</h3>
-			<ul>
-				<li><a href="#">공지사항</a></li>
-				<li><a href="#">비즈니스</a></li>
-				<li><a href="#">프로필</a></li>
-				<li><a href="#">개발자</a></li>
-				<li><a href="#">블로그</a></li>
-			</ul>
-		</div>
-	</nav>
-
-	<div class="footC">
-		© LOGGER corp. All rights reserved.
-	</div>
-
-</div>
-</footer>
+<% include ./footer %>
 
 
 </body>

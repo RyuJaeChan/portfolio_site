@@ -362,11 +362,11 @@ footer .container {
 	}
 
 	.footA {
-		flex: 0 0 40%;
+		flex: 0 0 100%;
 	}
 
 	.footB {
-		flex: 0 0 60%;
+		flex: 0 0 0%;
 	}
 
 	.footC {
@@ -378,6 +378,7 @@ footer .container {
 /* 푸터A: 사이트 정보 */
 .footA {
 	margin-bottom: 30px;
+	text-align : center;
 }
 
 .footA h2 {
@@ -401,6 +402,7 @@ footer .container {
 
 
 /* 푸터B: 푸터 메뉴 */
+/*
 .footB div {
 	margin-bottom: 20px;
 }
@@ -445,7 +447,7 @@ footer .container {
 	}
 }
 
-
+*/
 /* 푸터C: 저작권 */
 .footC {
 	font-size: 12px;
