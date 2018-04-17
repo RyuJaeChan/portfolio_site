@@ -977,7 +977,7 @@ header {
 
 /* 재구성: 헤더 색상 */
 .head-color {
-	background-color: #5D9AB2;
+	background-color: rgb(1, 54, 75);
 	background-color: var(--main-color);
 	color: #fff;
 	color: var(--text-bright-color);

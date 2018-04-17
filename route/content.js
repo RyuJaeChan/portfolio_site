@@ -11,19 +11,23 @@ var content_get = function(req, res){
     var data = {};
 
     var article_list = require('./article_list')
-    console.log(article_list)
     for(var i = 0 ; i < article_list.length; i++){
         if(article_list[i].id == req_id){
             data = article_list[i];
+            fs = require('fs')
+            fs.readFile('./public/article/'+req_id+'.txt','utf8',function(err, _data){
+                data.content = _data;
+                res.render('contents', data)
+            })
             break;
         }
     }
 
 
     
+    
 
-
-    res.render('contents', data)
+    
 }
 
 module.exports.content_get = content_get;
