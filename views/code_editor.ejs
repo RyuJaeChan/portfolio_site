@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<% include ./head %>
+<!--<% include ./head %>-->
+<head>
 
+<script src="public/lib/codemirror.js"></script>
+<link rel="stylesheet" href="public/lib/codemirror.css">
+<link rel="stylesheet" href="public/theme/blackboard.css">
+<script src="public/mode/python/python.js"></script>
 
+<link rel="stylesheet" href="/public/style.css">
+
+<script type="text/javascript">
+    function compile_btn_click(){   
         
-<body>
-    
+        alert("버튼능 눌렀습니다.");
+    }
+</script>
+</head>
+
+<body>    
     <div class = "cd_container">
         <div class="head-area">
-            
+            <button onclick="compile_btn_click()">Buttonddd</button>
+  
         </div>
-        <div class = "code-area" id="ca">
-                
+        <div class="code-area" id = "codeeditor">
+
+     
+            <script>
+            var editor = CodeMirror(document.getElementById("codeeditor"),{
+                value : "int main(){\n\tprintf(\"Hello World!\\n\");\n\treturn 0;\n}",
+                theme : "blackboard",
+                lineNumbers:true
+            });
+            </script>    
         </div>
         <div class="result-area" id="ra">
             Hello
         </div>
 
+        <div class="foot-area">
+            Foot
+        </div>
+
     </div>   
 </body>
 
-<script>
 
-        $(document).keyup(function(event){
-            //alert(event.which);
-            $("#ca").append(String.fromCharCode(event.which))
-        });
-        $("#ca").click(function(){
-            alert('click called');
-        });
-    
-</script>
 
 </html>

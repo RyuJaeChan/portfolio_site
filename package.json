@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/RyuJaeChan/my_site#readme",
   "dependencies": {
+    "codemirror": "^5.37.0",
     "ejs": "^2.5.8",
     "express": "^4.16.3",
-    "serve-static": "^1.13.2"
+    "serve-static": "^1.13.2",
+    "socketio": "^1.0.0"
   }
 }

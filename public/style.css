@@ -1008,14 +1008,14 @@ header {
 
 .code-area {
 	width:50%;
-	height: 300px;
+	height:700px;
 	float: left;
 	background-color: #BF6A7A
 }
 
 .result-area{
 	width:50%;
-	height:300px;
+	height:700px;
 	float: right;
 	background-color : crimson;
 }

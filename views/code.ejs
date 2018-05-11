@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="public/lib/codemirror.js"></script>
+    <link rel="stylesheet" href="public/lib/codemirror.css">
+    <link rel="stylesheet" href="public/theme/blackboard.css">
+    <script src="public/mode/python/python.js"></script>
+
+</head>
+<body>
+
+
+
+    <div id="codeeditor"></div>
+    <script>
+        var editor = CodeMirror(document.getElementById("codeeditor"),{
+            value : "int main(){\n\tprintf(\"Hello World!\\n\");\n\treturn 0;\n}",
+            theme : "blackboard"
+        });
+    
+    </script>
+    
+</body>
+
+
+
+</html>

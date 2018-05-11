@@ -23,6 +23,7 @@ route_load.init(app);
 
 
 
-http.createServer(app).listen(app.get('port'), function(){
+var server = http.createServer(app).listen(app.get('port'), function(){
     console.log('Server start at ' + app.get('port'))
 })
+
