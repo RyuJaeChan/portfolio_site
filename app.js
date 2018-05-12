@@ -5,7 +5,6 @@ var express = require('express')
 
 var config = require('./config/config');
 
-
 var app = express();
 app.set('port', config.server_port);
 
@@ -15,15 +14,12 @@ app.use('/public', static(path.join(__dirname, 'public')));
 app.set('views', __dirname + '/views')
 app.set('view engine', 'ejs')
 
-
-
 var route_load = require('./route/route_loader');
 route_load.init(app);
-
-
-
 
 var server = http.createServer(app).listen(app.get('port'), function(){
     console.log('Server start at ' + app.get('port'))
 })
 
+var startSocketserver = require('./socket')
+startSocketserver(server);

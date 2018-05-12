@@ -21,11 +21,7 @@ module.exports = function(server){
                 io.sockets.emit('message', message)
             }
 
-
-
-
-
-            
+    
         })
     })
 }

@@ -9,12 +9,17 @@
 <link rel="stylesheet" href="public/theme/blackboard.css">
 <script src="public/mode/python/python.js"></script>
 
+<script src="./public/jquery-2.1.4.min.js"></script>
+<script src="./public/socket.io.js"></script>
+
 <link rel="stylesheet" href="/public/style.css">
 
 <script type="text/javascript">
+    
+    
     function compile_btn_click(){   
-        
-        alert("버튼능 눌렀습니다.");
+
+        alert(editor.getValue());
     }
 </script>
 </head>
@@ -29,11 +34,11 @@
 
      
             <script>
-            var editor = CodeMirror(document.getElementById("codeeditor"),{
+               var editor = CodeMirror(document.getElementById("codeeditor"),{
                 value : "int main(){\n\tprintf(\"Hello World!\\n\");\n\treturn 0;\n}",
                 theme : "blackboard",
                 lineNumbers:true
-            });
+                });
             </script>    
         </div>
         <div class="result-area" id="ra">
